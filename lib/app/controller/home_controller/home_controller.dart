@@ -4,8 +4,8 @@ import 'package:get/get.dart';
 
 class HomeController extends GetxController {
   //repository required
-  final MyRepository repository;
-  HomeController({required this.repository}) : assert(repository != null);
+  final MyRepository? repository;
+  HomeController({this.repository}) : assert(repository != null);
 
   //use o snippet getfinal para criar está variável
   final _postsList = List<MyModel>.empty().obs;
@@ -14,7 +14,7 @@ class HomeController extends GetxController {
 
   ///função para recuperar todos os posts
   getAll() {
-    repository.getAll().then((data) {
+    repository?.getAll().then((data) {
       this.postList = data;
     });
   }
