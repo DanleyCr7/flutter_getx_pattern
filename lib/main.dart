@@ -1,6 +1,6 @@
 import 'package:cloud_cliente/app/bindings/home_binding.dart.dart';
 import 'package:cloud_cliente/routes/app_pages.dart';
-import 'package:cloud_cliente/ui/android/home/widgets/home_page.dart';
+import 'package:cloud_cliente/ui/android/home/home_page.dart';
 import 'package:cloud_cliente/ui/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_cliente/routes/app_routes.dart';
